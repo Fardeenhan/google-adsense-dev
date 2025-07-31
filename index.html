@@ -186,74 +186,143 @@ Feedback</span>
 
 <div class="main-content" id="mainContent">
     <div class="row mb-4 mt-3">
- <div class="col-12 col-lg-8 mb-3 mb-lg-0 h-100">
-  <div class="card shadow-sm text-white " style="background-color: #4960df;">
+<div class="col-12 col-lg-8 mb-3 mb-lg-0 h-100">
+  <div class="card shadow-sm text-white" style="background-color: #1a73e8;">
     <div class="card-body">
-      <div class="d-flex justify-content-between align-items-center mb-3 ">
-        <h5 class=" mt-3">Estimated earnings</h5>
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <p class="mt-0 mb-0">Estimated earnings</p>
         <div class="dropdown">
-     
-             <button class="btn btn-link p-0 text-white" type="button" data-bs-toggle="dropdown" style="font-size: 25px !important;">
-    <i class="bi bi-three-dots-vertical"></i>
-</button>
+          <button class="btn btn-link p-0 text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 25px !important;">
+            <i class="bi bi-three-dots-vertical"></i>
+          </button>
           <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#"> 
-                <img src="assets/iamges/insert_chart_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt=""> <span class="nav-link-text">  View report</span>
-              
-            </a></li>
-               <li><a class="dropdown-item" href="#">
-                <img src="assets/iamges/edit_24dp_434343_FILL0_wght400_GRAD0_opsz24.png" alt=""> <span class="nav-link-text ms-1 ">
-                  
-                  configure </span>
-              
-              </a></li>
-         <li><a class="dropdown-item" href="#">
-                <img src="assets/iamges/help_24dp_434343_FILL0_wght400_GRAD0_opsz24.png" alt=""> <span class="nav-link-text ms-1 ">
-                  
-                  help </span>
-              
-              </a></li>
-            <li><a class="dropdown-item" href="#">
-                <img src="assets/iamges/feedback_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""> <span class="nav-link-text ms-1 ">
-                  
-                  send feeback </span>
-              
-              </a></li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="assets/images/insert_chart_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="View report icon">
+                <span class="nav-link-text ms-2">View report</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="assets/images/edit_24dp_434343_FILL0_wght400_GRAD0_opsz24.png" alt="Configure icon">
+                <span class="nav-link-text ms-2">Configure</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="assets/images/help_24dp_434343_FILL0_wght400_GRAD0_opsz24.png" alt="Help icon">
+                <span class="nav-link-text ms-2">Help</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="assets/images/feedback_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Send feedback icon">
+                <span class="nav-link-text ms-2">Send feedback</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
+<style>
+  /*
+ * Custom styles for the stats card.
+ *
+ * This CSS uses a desktop-first approach with a media query
+ * to shrink font sizes specifically for mobile devices.
+ */
 
-      <div class="row text-center">
-        <div class="col-lg-3 col-sm-6 col-md-6">
-          <p class="text-white mb-0">Today so far</p>
-          <h3 class="mb-0">$0.00</h3>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-md-6">
-          <p class="text-white mb-0">Yesterday</p>
-          <h3 class="mb-0">$0.00</h3>
-          <small class="text-white">+0.00</small>
-          <small class="d-block text-white">vs same day last week</small>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-md-6">
-          <p class="text-white mb-0">Last 7 days</p>
-          <h3 class="mb-0">$0.00</h3>
-          <small class="text-white">+0.00</small>
-          <small class="d-block text-white">vs previous 7 days</small>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-md-6">
-          <p class="text-white mb-0">This month</p>
-          <h3 class="mb-0">$0.00</h3>
-          <small class="text-white">+0.00</small>
-          <small class="d-block text-white">vs same period last year</small>
-        </div>
-      </div>
+/* ============================
+   Base Styles (for Desktop)
+   ============================ */
+
+/* Main container for the stats row to ensure specificity */
+.custom-stats-row {
+  /* No styles needed here, just a selector for targeting */
+}
+
+/* Styles for the "label" text (e.g., "Today so far") */
+.custom-stats-row .stat-label {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Styles for the main value (e.g., "$0.00") */
+.custom-stats-row .stat-value {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Styles for the change value (e.g., "+0.00") */
+.custom-stats-row .stat-change {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* Styles for the comparison text (e.g., "vs same day last week") */
+.custom-stats-row .stat-comparison {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* ============================
+   Media Query (for Mobile)
+   ============================ */
+
+/*
+ * This media query targets screens with a width of 767.98px or less.
+ * This ensures the font sizes are smaller and more readable on mobile devices.
+ */
+@media (max-width: 767.98px) {
+  .custom-stats-row .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .custom-stats-row .stat-value {
+    font-size: 1.3rem;
+  }
+
+  .custom-stats-row .stat-change {
+    font-size: 0.8rem;
+  }
+
+  .custom-stats-row .stat-comparison {
+    font-size: 0.7rem;
+  }
+}
+</style>
+<div class="row custom-stats-row border-opacity-25">
+  <div class="col-6 col-md-3 mt-3">
+    <p class="text-white mb-0 stat-label">Today so far</p>
+    <h3 class="mb-0 stat-value">$0.00</h3>
+  </div>
+  <div class="col-6 col-md-3 mt-3">
+    <p class="text-white mb-0 stat-label">Yesterday</p>
+    <h3 class="mb-0 stat-value">$0.00</h3>
+    <p class="text-white mb-0 stat-change">+0.00</p>
+    <small class="d-block text-white stat-comparison">vs same day last week</small>
+  </div>
+  <div class="col-6 col-md-3 mt-3">
+    <p class="text-white mb-0 stat-label">Last 7 days</p>
+    <h3 class="mb-0 stat-value">$0.00</h3>
+    <p class="text-white mb-0 stat-change">+0.00</p>
+    <small class="d-block text-white stat-comparison">vs previous 7 days</small>
+  </div>
+  <div class="col-6 col-md-3 mt-3">
+    <p class="text-white mb-0 stat-label">This month</p>
+    <h3 class="mb-0 stat-value">$0.00</h3>
+    <p class="text-white mb-0 stat-change">+0.00</p>
+    <small class="d-block text-white stat-comparison">vs same period last year</small>
+  </div>
+</div>
     </div>
   </div>
 </div>
 
-
       <div class="col-12 col-lg-4 h-auto">
-        <div class="card shadow-sm text-white h-auto" style="background-color: #4960df;;">
+        <div class="card shadow-sm text-white h-auto" style="background-color: #1a73e8;;">
           <div class="card-body h-100 ">
             <div class="d-flex justify-content-between align-items-center mb-3 h-100">
               <h5 class="card-title mb-3 mt-3">Balance</h5>
